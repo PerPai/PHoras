@@ -1,0 +1,20 @@
+###
+GET  http://127.0.0.1:3000/students HTTP/1.1
+
+###
+GET  http://127.0.0.1:3000/user HTTP/1.1
+
+
+//Agrega un campo en la tabla 
+###
+POST http://127.0.0.1:3000/students HTTP/1.1
+Content-Type: application/json
+
+{"_id":32323,
+"carnet": "C18776",
+"date":"12/12/2022",
+"eTime":"12:00",
+"dTime":"12:00",
+"description": "holahola"}
+
+

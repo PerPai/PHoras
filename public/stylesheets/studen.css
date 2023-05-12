@@ -1,0 +1,90 @@
+/* Estilo para el encabezado y el botón desplegable */
+  #content {
+    margin-top: 100px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.30rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  #btnLO{
+    margin-right: 1%;
+}
+
+body{
+  background-color:rgb(246, 172, 227);
+}
+
+  #bodyx {
+    background-color: rgb(246, 172, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+  .dropdown {
+    margin-bottom: 2rem;
+  }
+  
+
+  .container {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  #dpd{
+    margin-left: -90%;
+    margin-bottom: 25%;
+    position: absolute;
+  }
+  
+  input[type="date"],
+  input[type="time"],
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  }
+  
+  input[type="button"] {
+    background-color: #007bff;
+    border: none;
+    margin-left: 90%;
+    border-radius: 0.25rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #0069d9;
+  }
+  
+  /* Estilo para la tabla */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: #fff;
+  }

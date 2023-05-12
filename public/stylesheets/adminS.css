@@ -1,0 +1,62 @@
+body{
+background-color: rgb(28, 84, 84);  
+}
+
+#btnLO {
+    margin-right: 1%;
+}
+
+#funcionesUser {
+    margin-top: 5%;
+    display: flex; /* Agregado */
+  
+}
+
+#gestionUsers {
+    margin-left: 11%;
+    width: 60%;
+    border-radius: 5px;
+    background-color: brown;
+}
+
+#btns{
+  float: right;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+#carnet{
+    width: 60%;
+}
+
+#actions{
+ 
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+#btnsU{
+    float: right;
+      margin-right: 1%;
+      margin-bottom: 1%;
+  }
+
+#campos {
+    border-radius: 5px;
+    margin-left: 5%;
+    background-color: rgb(96, 149, 132);
+    width:20%; /* Modificado */ 
+    
+}
+
+.cam {
+    margin-left: 25px;
+    border: 25px;
+    width: 80%;
+
+}
+
+.h {
+    margin-left: 25px;
+    width: 30%;
+}
