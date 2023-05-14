@@ -111,7 +111,7 @@ function compUsuario(carnet, pass) {
              alert("Usuario o contraseña incorrecta")
         }
     });
-    xhr.open('GET', 'http://127.0.0.1:3000/user/' + carnet);//acceso al user en cuestion con la concatenacion del id
+    xhr.open('GET', 'http://mongodb+srv://Pai829:u675qOrkzqd9Y48J@horariohorasea.bufeupr.mongodb.net/?retryWrites=true&w=majority/user/' + carnet);//acceso al user en cuestion con la concatenacion del id
     xhr.responseType = 'json';
     xhr.send();
 }
