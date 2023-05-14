@@ -108,7 +108,7 @@ function compUsuario(carnet, pass) {
               alert("Usuario o contraseña incorrecta")
             }
         } else {
-            alert("error")
+             alert("Usuario o contraseña incorrecta")
         }
     });
     xhr.open('GET', 'http://127.0.0.1:3000/user/' + carnet);//acceso al user en cuestion con la concatenacion del id
