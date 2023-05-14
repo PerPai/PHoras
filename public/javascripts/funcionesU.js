@@ -92,6 +92,7 @@ function postUsuario(id, name, secondName, assignedHours,passw) {
 
 
 function compUsuario(carnet, pass) {
+    alert("hola");
     sessionStorage.setItem('carnet', carnet);
     const xhr = new XMLHttpRequest();
     xhr.addEventListener('load', () => {
