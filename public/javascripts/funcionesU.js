@@ -1,5 +1,6 @@
 
 
+
 //variables para la comprobacion de estados de los datos
 let data = "";
 let comprobate;
@@ -25,7 +26,7 @@ function cantRegs(callback) {
 
         }
     });
-    xhr.open('GET', 'http://127.0.0.1:3000/students');//ruta de conexion
+    xhr.open('GET', 'https://sistemahoras.herokuapp.com/students');//ruta de conexion
     xhr.responseType = 'json';
     xhr.send();
 }
@@ -49,7 +50,7 @@ function postData(date, eTime, dTime, description) {
         };
      
 
-        xhr.open('POST', 'http://127.0.0.1:3000/students');
+        xhr.open('POST', 'https://sistemahoras.herokuapp.com/students');
         xhr.setRequestHeader('Content-Type', 'application/json');
         let json = JSON.stringify(obj);
         xhr.send(json);
@@ -82,7 +83,7 @@ function postUsuario(id, name, secondName, assignedHours,passw) {
         };
         
      
-        xhr.open('POST', 'http://127.0.0.1:3000/user');
+        xhr.open('POST', 'https://sistemahoras.herokuapp.com/user');
         xhr.setRequestHeader('Content-Type', 'application/json');
         let json = JSON.stringify(obj);
         xhr.send(json);
@@ -92,7 +93,6 @@ function postUsuario(id, name, secondName, assignedHours,passw) {
 
 
 function compUsuario(carnet, pass) {
-    alert("hola");
     sessionStorage.setItem('carnet', carnet);
     const xhr = new XMLHttpRequest();
     xhr.addEventListener('load', () => {
@@ -109,10 +109,10 @@ function compUsuario(carnet, pass) {
               alert("Usuario o contraseña incorrecta")
             }
         } else {
-             alert("Usuario o contraseña incorrecta")
+            alert("Usuario o contraseña incorrecta")
         }
     });
-    xhr.open('GET', 'http://mongodb+srv://Pai829:u675qOrkzqd9Y48J@horariohorasea.bufeupr.mongodb.net/?retryWrites=true&w=majority/user/' + carnet);//acceso al user en cuestion con la concatenacion del id
+    xhr.open('GET', 'https://sistemahoras.herokuapp.com/user/' + carnet);//acceso al user en cuestion con la concatenacion del id
     xhr.responseType = 'json';
     xhr.send();
 }
@@ -137,7 +137,7 @@ function comprobarExistencia(id) {
         }
     });
     //consulta GET por medio de la ruta "http://127.0.0.1:3000/est"
-    xhr.open('GET', 'http://127.0.0.1:3000/est/' + id);//acceso al id en cuestion
+    xhr.open('GET', 'https://sistemahoras.herokuapp.com/est/' + id);//acceso al id en cuestion
     xhr.send();
 }
 //Metodo encargado de eliminar un dato especifico ubicandolo por el id ingresado en parametros
@@ -151,7 +151,7 @@ function deleteU(id) {
         }
     });
     //consulta DELETE por medio de la ruta "http://127.0.0.1:3000/api" y concatenando el 'id' para setear los nuevos valores (stock)
-    xhr.open('DELETE', 'http://127.0.0.1:3000/user/' + id);
+    xhr.open('DELETE', 'https://sistemahoras.herokuapp.com/user/' + id);
     xhr.send();
 }
 
@@ -187,7 +187,7 @@ function mostrarUsuarios() {
         }
     });
 
-    xhr.open('GET', 'http://127.0.0.1:3000/user');
+    xhr.open('GET', 'https://sistemahoras.herokuapp.com/user');
     xhr.responseType = 'json';
     xhr.send();
 }
@@ -230,7 +230,7 @@ function get() {
         }
     });
 
-    xhr.open('GET', 'http://127.0.0.1:3000/students');
+    xhr.open('GET', 'https://sistemahoras.herokuapp.com/students');
     xhr.responseType = 'json';
     xhr.send();
 }
@@ -267,3 +267,4 @@ function getUId(carnet) {
     xhr.responseType = 'json';
     xhr.send();
 }
+
