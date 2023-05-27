@@ -78,7 +78,7 @@ function postUsuario(id, name, secondName, assignedHours,passw) {
             name: name,
             secondName: secondName,
             assignedHours: assignedHours,
-            HoursReal: defect,//////
+            hoursReal: defect,//////
             rol: rol,
             password: passw
         };
