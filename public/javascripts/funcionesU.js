@@ -58,8 +58,8 @@ function postData(date, eTime, dTime, description) {
 }
 
 /////////
-
 function postUsuario(id, name, secondName, assignedHours,passw) {
+    let defect = 0;
     if(id==0 || name == "" || secondName=="" || assignedHours == null || passw == ""){
         alert("No puede dehar campos vacios >:(");
     }else{
@@ -78,6 +78,7 @@ function postUsuario(id, name, secondName, assignedHours,passw) {
             name: name,
             secondName: secondName,
             assignedHours: assignedHours,
+            HoursReal: defect,//////
             rol: rol,
             password: passw
         };
@@ -90,6 +91,7 @@ function postUsuario(id, name, secondName, assignedHours,passw) {
         //
         alert("Usuario agregado correctamente");
 }}
+
 
 
 function compUsuario(carnet, pass) {
