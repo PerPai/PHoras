@@ -4,6 +4,7 @@ EstSchema = new mongoose.Schema({
     name: String,
     secondName: String,
     assignedHours: Number,
+    hoursReal: Number,
     rol: Number,
     password: String
 }, {
