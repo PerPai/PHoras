@@ -199,7 +199,7 @@ function get() {
     let identificador = sessionStorage.getItem('carnet');
     // Seteo de una tabla de contenidos en el HTML
     const tabla = document.getElementById('response');
-    const tag = '<table id="Table"></table>';
+    const tag = '<table id="Table class="table""></table>';
     tabla.innerHTML = tag;
 
     $("#Table").append('<tr>' +
